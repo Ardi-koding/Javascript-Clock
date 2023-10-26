@@ -1,18 +1,13 @@
-let date = new Date();
-console.log(date);
-
-const clock = document.getElementById("clockDisplay");
 const semiColon = ":";
+let date = new Date();
 
 let timeHour = String(date.getHours()).padStart(2, "0")
 let timeMinutes = String(date.getMinutes()).padStart(2, "0")
 let timeSeconds = String(date.getSeconds()).padStart(2, "0")
 
+let waktu = timeHour + ":" + timeMinutes + ":" + timeSeconds;
 
-clock.append(timeHour, semiColon, timeMinutes, semiColon, timeSeconds)
-
-function update() {
-}
+document.getElementById("waktuSekarang").innerText = waktu;
 
 // window.setInterval(update, 1000);
 
