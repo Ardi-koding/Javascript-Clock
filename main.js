@@ -2,7 +2,6 @@
 
 function waktuSekarang24() {
   let date = new Date();
-
   let tH = String(date.getHours()).padStart(2, "0")
   let tM = String(date.getMinutes()).padStart(2, "0")
   let tS = String(date.getSeconds()).padStart(2, "0")
@@ -31,8 +30,19 @@ function waktuSekarang12() {
   document.getElementById("waktuSekarang12").innerText = waktu;
 }
 
-window.setInterval(waktuSekarang24, waktuSekarang12, 1000);
-window.setInterval(waktuSekarang12, waktuSekarang12, 1000);
+window.setInterval(waktuSekarang24, 1000);
+window.setInterval(waktuSekarang12, 1000);
+
+function showOrHide() {
+  let waktuSekarang24 = document.getElementById("waktuSekarang24");
+  let display = window.getComputedStyle(waktuSekarang24).display;
+
+  if (display === "block") {
+    waktuSekarang24.style.display = "none";
+  } else {
+    waktuSekarang24.style.display = "block"
+  }
+}
 
 /*
 * Functionality First, Style Later

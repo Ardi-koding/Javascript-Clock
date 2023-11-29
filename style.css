@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -12,13 +14,21 @@ body {
   justify-content: center;
   align-items: center;
   margin: auto;
+  font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
+  
 }
 
-h1 {
-  margin-bottom: 1rem;
+button {
+  width: 200px;
+  height: 200px;
+  font: inherit;
 }
 
-#waktusekarang12 {
-  margin-top: 24px;
+#waktuSekarang24 {
+  display: block;
+}
+
+#waktuSekarang12 {
+  display: block;
 }
