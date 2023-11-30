@@ -1,6 +1,5 @@
 
-
-function waktuSekarang24() {
+function time24() {
   let date = new Date();
   let tH = String(date.getHours()).padStart(2, "0")
   let tM = String(date.getMinutes()).padStart(2, "0")
@@ -8,10 +7,10 @@ function waktuSekarang24() {
 
   let waktu = tH + ":" + tM + ":" + tS;
   
-  document.getElementById("waktuSekarang24").innerText = waktu;
+  document.getElementById("time24").innerText = waktu;
 }
 
-function waktuSekarang12() {
+function time12() {
   let date = new Date();
   let tH = date.getHours();
   let tM = date.getMinutes();
@@ -27,20 +26,25 @@ function waktuSekarang12() {
   tS = String(tS).padStart(2, "0");
 
   let waktu = tH + ":" + tM + ":" + tS + bagiWaktu;
-  document.getElementById("waktuSekarang12").innerText = waktu;
+  document.getElementById("time12").innerText = waktu;
 }
 
-window.setInterval(waktuSekarang24, 1000);
-window.setInterval(waktuSekarang12, 1000);
+window.setInterval(time24, 1000);
+window.setInterval(time12, 1000);
 
 function showOrHide() {
-  let waktuSekarang24 = document.getElementById("waktuSekarang24");
-  let display = window.getComputedStyle(waktuSekarang24).display;
+  let time24 = document.getElementById("time24");
+  let display24 = window.getComputedStyle(time24).display;
 
-  if (display === "block") {
-    waktuSekarang24.style.display = "none";
+  let time12 = document.getElementById("time12");
+  let display12 = window.getComputedStyle(time12).display;
+
+  if (display24 === "block" && display12 === "none") {
+    time24.style.display = "none";
+    time12.style.display = "block";
   } else {
-    waktuSekarang24.style.display = "block"
+    time24.style.display = "block"
+    time12.style.display = "none"
   }
 }
 
@@ -54,8 +58,9 @@ A. Functionality
     4. setInterval untuk update waktu VVVV
     5. Buat untuk Tipe Jam 12 VVVV
     6. Brute Force LOL \(^o^)/ VVVV
+    7. Functipnality untuk mengganti Sistem waktu 24 jam dan 12 jam vvvv
 
 B. Style
-    1. Honestly, still not have idea.
+    1. Sekarang Style???
 */
 

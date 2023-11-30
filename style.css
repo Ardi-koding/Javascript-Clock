@@ -25,10 +25,10 @@ button {
   font: inherit;
 }
 
-#waktuSekarang24 {
+#time24 {
   display: block;
 }
 
-#waktuSekarang12 {
-  display: block;
+#time12 {
+  display: none;
 }
