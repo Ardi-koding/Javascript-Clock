@@ -32,3 +32,37 @@ button {
 #time12 {
   display: none;
 }
+
+#clock-container {
+  width: 500px;
+  height: 500px;
+  background-color: lightgray;
+  border-radius: 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.clock {
+  background-image: url(/image/ios_clock.svg);
+  background-repeat: no-repeat;
+  background-size: 90%;
+  background-position: center;
+  width: 85%;
+  height: 85%;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.titik-bulat {
+  width: 25px;
+  height: 25px;
+  background-color: black;
+  border-radius: 50%;
+  position: absolute;
+  top: 45%;
+  left: 47.5%;
+}
