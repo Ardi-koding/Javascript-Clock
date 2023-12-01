@@ -68,3 +68,45 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.hours-container,
+.minutes-container,
+.seconds-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.hours {
+  width: 2.5%;
+  height: 20%;
+  background-color: #000;
+  position: absolute;
+  top: 30%;
+  left: 48.75%;
+  transform-origin: 50% 100%;
+}
+
+.minutes {
+  width: 2%;
+  height: 40%;
+  background-color: black;
+  position: absolute;
+  top: 10%;
+  left: 49.5%;
+  transform-origin: 50% 100%;
+  transform: rotateZ(45deg);
+}
+
+.seconds {
+  width: 1%;
+  height: 48%;
+  background-color: black;
+  position: absolute;
+  top: 13.5%;
+  left: 52%;
+  transform-origin: 50% 76.5%;
+  transform: rotateZ(90deg);
+}
