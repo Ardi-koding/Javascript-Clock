@@ -106,7 +106,34 @@ button {
   background-color: black;
   position: absolute;
   top: 13.5%;
-  left: 52%;
+  left: 49.5%;
   transform-origin: 50% 76.5%;
   transform: rotateZ(90deg);
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.hours-container {
+  animation-duration: 43200s;
+  animation-name: rotate;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.minutes-container {
+  animation-duration: 3600s;
+  animation-name: rotate;
+  animation-timing-function: steps(60);
+  animation-iteration-count: infinite;
+}
+
+.seconds-container {
+  animation-duration: 60s;
+  animation-name: rotate;
+  animation-timing-function: steps(60);
+  animation-iteration-count: infinite;
 }
