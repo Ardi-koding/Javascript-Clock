@@ -48,19 +48,5 @@ function showOrHide() {
   }
 }
 
-/*
-* Functionality First, Style Later
-A. Functionality 
-    1. get time from local machine VVVVVVV
-    2. display time in two digits format VVVV
-      3. append ":" between hour, minute and seconds VVVV Bug, malahan jadi terus tersambung
-    3. cara menampilkan di browser VVVV
-    4. setInterval untuk update waktu VVVV
-    5. Buat untuk Tipe Jam 12 VVVV
-    6. Brute Force LOL \(^o^)/ VVVV
-    7. Functipnality untuk mengganti Sistem waktu 24 jam dan 12 jam vvvv
 
-B. Style
-    1. Sekarang Style???
-*/
 
