@@ -80,7 +80,7 @@ body {
   background-color: black;
   position: absolute;
   top: 10%;
-  left: 49.5%;
+  left: 48.5%;
   transform-origin: 50% 100%;
   transform: rotateZ(45deg);
 }
