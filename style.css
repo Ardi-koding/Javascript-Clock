@@ -19,6 +19,20 @@ body {
   
 }
 
+button {
+  width: 200px;
+  height: 200px;
+  font: inherit;
+}
+
+#time24 {
+  display: block;
+}
+
+#time12 {
+  display: none;
+}
+
 #clock-container {
   width: 450px;
   height: 450px;
