@@ -9,6 +9,15 @@
   <link rel="stylesheet" href="/digital.css">
 </head>
 <body>
+  
+  <div class="container">
+    <div class="digital">
+      <div id="time24"></div>
+      <div id="time12"></div>
+    </div>
+    <button onclick="showOrHide()">Click me</button>
+  </div>
+
   <div class="container">
     <div class="analog">
       <article class="clock">
@@ -28,13 +37,8 @@
       </article>
     </div>
   </div>
-  
-  <div class="digital">
-    <div id="time24"></div>
-    <div id="time12"></div>
-    <button onclick="showOrHide()">Click me</button>
-  </div>
 
   <script src="main.js"></script>
+  <script src="digital.js"></script>
 </body>
 </html>
