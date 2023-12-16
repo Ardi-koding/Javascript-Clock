@@ -121,32 +121,3 @@ body {
   transition: transform 0.2s cubic-bezier(.4, 2.08, .55, .44);
 }
 
-/* Digital */
-.digital {
-  width: 875px;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-
-button {
-  width: 200px;
-  height: 200px;
-  font: inherit;
-}
-
-#time24 {
-  display: block;
-}
-
-#time12 {
-  display: none;
-}
-
-/* Prototype */
-.page2 {
-  transform: translateX(-100%);
-}
