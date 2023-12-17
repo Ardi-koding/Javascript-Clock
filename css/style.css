@@ -7,15 +7,47 @@
 }
 
 body {
-  max-width: 100vw;
-  min-height: 200vh;
+  min-width: 100vw;
+  min-height: 100vh;
   font-family: "digital dream Fat", sans-serif;
-  font-size: 3.5rem;
+  font-size: 16px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 
+/* Link */
+.button-container {
+  width: 10em;
+  height: 10vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+/*
+a:hover {
+
+}
+
+a:active {
+
+}
+
+a:visited {
+
+}
+*/
 /* Analog */
 .container {
-  min-height: 100vh;
+  min-height: 90vh;
   max-width: 100vw;
   display: flex;
   flex-direction: column;
@@ -24,18 +56,18 @@ body {
 }
 
 .analog {
-  width: 375px;
-  height: 375px;
+  width: 400px;
+  height: 400px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
-  background-color: lightgray;
+  background-color: #d3d3d3;
   border-radius: 2.5%;
 }
 
 .clock {
+  position: relative;
   background-image: url(/image/ios_clock.svg);
   background-repeat: no-repeat;
   background-size: 90%;
@@ -44,7 +76,6 @@ body {
   height: 85%;
   background-color: white;
   border-radius: 50%;
-  position: relative;
 }
 
 .titik-bulat {
@@ -100,6 +131,7 @@ body {
   transform: rotateZ(90deg);
 }
 
+/* Animation */
 @keyframes rotate {
   100% {
     transform: rotateZ(360deg);
