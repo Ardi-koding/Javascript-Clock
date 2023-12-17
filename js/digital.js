@@ -47,14 +47,22 @@ function showOrHide() {
     time12.style.display = "none"
   }
 
+  // digital width
   let digitalContainer = document.querySelector(".digital");
-
   if (display24 === "block") {
-    digitalContainer.style.width = "80%";
+    digitalContainer.style.width = "65vw";
+  }
+  if (display12 === "block") {
+    digitalContainer.style.width = "50vw";
   }
 
+  // button inner text
+  let text = document.querySelector("button");
   if (display12 === "block") {
-    digitalContainer.style.width = "60%";
+    text.innerText = "24 HOUR"
+  } 
+  if (display24 === "block") {
+    text.innerText = "12 HOUR"
   }
 
 }

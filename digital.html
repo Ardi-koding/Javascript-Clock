@@ -4,22 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Digital Clock</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="/css/digital.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/digital.css">
 </head>
 <body>
-  <div>
-    <button class="page-button previous"></button>
-  </div>
-
+  
   <div class="container">
     <div class="digital">
       <div id="time24"></div>
       <div id="time12"></div>
     </div>
-    <button onclick="showOrHide()">Click me</button>
+    <button onclick="showOrHide()">24 Hour</button>
   </div>
   
+  <div class="button-container">
+    <a href="index.html" class="page-button previous">Previous</a>
+  </div>
+
   <script src="js/digital.js"></script>
 </body>
 </html>

@@ -1,22 +1,32 @@
 /* Digital */
+
+.container {
+  font-size: 2rem;
+  min-width: 100vw;
+}
+
 .digital {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  width: 35%;
-  height: 30vh;
+  width: 50vw;
+  height: 20vh;
   border: 2px solid black;
   border-radius: 20px;
-  letter-spacing: 0.5px;
+  background: rgb(28, 40, 18);
+  background: -moz-linear-gradient(145deg, rgba(219,225,214,1) 0%, rgba(207,215,197,1) 40%, rgba(166,178,154,1) 100%);
+  background: -webkit-linear-gradient(145deg, rgba(219,225,214,1) 0%, rgba(207,215,197,1) 40%, rgba(166,178,154,1) 100%);
+  background: linear-gradient(145deg, rgba(219,225,214,1) 0%, rgba(207,215,197,1) 40%, rgba(166,178,154,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dbe1d6",endColorstr="#a6b29a",GradientType=1);
 }
 
 button {
-  width: 100px;
-  height: 50px;
+  width: 7.5em;
+  height: 2.5em;
   font: inherit;
   font-size: 1rem;
+  margin-top: 1em;
 }
 
 #time24 {
@@ -27,17 +37,8 @@ button {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 3rem;
-  }
+@media screen and (max-width: 430px) {
   .digital {
-    width: 60%;
-    height: 20vh;
-    background: rgb(219,225,214);
-    background: -moz-linear-gradient(145deg, rgba(219,225,214,1) 0%, rgba(207,215,197,1) 40%, rgba(166,178,154,1) 100%);
-    background: -webkit-linear-gradient(145deg, rgba(219,225,214,1) 0%, rgba(207,215,197,1) 40%, rgba(166,178,154,1) 100%);
-    background: linear-gradient(145deg, rgba(219,225,214,1) 0%, rgba(207,215,197,1) 40%, rgba(166,178,154,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dbe1d6",endColorstr="#a6b29a",GradientType=1);
+    font-size: 1.75rem;
   }
 }
