@@ -1,7 +1,6 @@
 /* Digital */
 
 .container {
-  font-size: 2rem;
   min-width: 100vw;
 }
 
@@ -10,7 +9,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 50vw;
+  width: 35vw;
   height: 20vh;
   border: 2px solid black;
   border-radius: 20px;
@@ -37,8 +36,55 @@ button {
   display: none;
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (min-width: 1025px) {
   .digital {
-    font-size: 1.75rem;
+    font-size: 9vh;
+    height: 30vh;
+  }
+  button {
+    font-size: 3.5vh;
+  }
+  a {
+    font-size: 4vh;
   }
 }
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  .digital {
+    font-size: 7vh;
+    height: 25vh;
+  }
+  button {
+    font-size: 2.75vh;
+  }
+  a {
+    font-size: 3.5vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .digital {
+    font-size: 5.25vh;
+    height: 22.5vh;
+  }
+  button {
+    font-size: 2.25vh;
+  }
+  a {
+    font-size: 3vh;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .digital {
+    font-size: 4.25vh;
+    height: 20vh;
+  }
+  button {
+    font-size: 2vh;
+  }
+  a {
+    font-size: 2.75vh;
+  }
+}
+
