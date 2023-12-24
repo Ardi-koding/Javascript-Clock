@@ -50,10 +50,10 @@ function showOrHide() {
   // digital width
   let digitalContainer = document.querySelector(".digital");
   if (display24 === "block") {
-    digitalContainer.style.width = "50.5vw";
+    digitalContainer.style.width = "min(500px, 50.5vw)";
   }
   if (display12 === "block") {
-    digitalContainer.style.width = "35vw";
+    digitalContainer.style.width = "min(400px, 35vw)";
   }
 
   // button inner text

@@ -1,80 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+/* Variables */
+:root {
+  --fs: 16px;
+  --fs-button: 24px;
+  --ff: "digital dream Fat", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body {
+html {
   min-width: 100vw;
+  min-width: 100svw;
   min-height: 100vh;
-  font-family: "digital dream Fat", sans-serif;
-  font-size: 16px;
+  min-height: 100svh;
+}
+
+body {
+  font-family: var(--ff);
+  font-size: var(--fs);
+  min-height: inherit;
+}
+
+/* display */
+body,
+.button-container,
+.container,
+.analog {
   display: flex;
-  flex-flow: column nowrap;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
 /* Link */
 .button-container {
   width: 10em;
-  height: 10vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 5em;
 }
 
 a {
   color: black;
   display: inline-block;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: var(--fs-button);
 }
 
 /* Analog */
-.container {
-  min-height: 90vh;
-  max-width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .analog {
   width: 400px;
   height: 400px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   background-color: #d3d3d3;
   border-radius: 2.5%;
 }
 
 .clock {
-  position: relative;
+  background-color: white;
   background-image: url(/image/ios_clock.svg);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: 90%;
-  background-position: center;
-  width: 85%;
-  height: 85%;
-  background-color: white;
   border-radius: 50%;
+  height: 85%;
+  position: relative;
+  width: 85%;
 }
 
 .titik-bulat {
-  width: 25px;
-  height: 25px;
   background-color: black;
   border-radius: 50%;
+  height: 25px;
+  left: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%);
+  width: 25px;
 }
 
 .hours-container,
@@ -88,35 +93,35 @@ a {
 }
 
 .hours {
-  width: 2.5%;
-  height: 20%;
   background-color: #000;
+  height: 20%;
+  left: 48.75%;
   position: absolute;
   top: 30%;
-  left: 48.75%;
   transform-origin: 50% 100%;
+  width: 2.5%;
 }
 
 .minutes {
-  width: 2%;
-  height: 40%;
   background-color: black;
+  height: 40%;
+  left: 48.5%;
   position: absolute;
   top: 10%;
-  left: 48.5%;
   transform-origin: 50% 100%;
   transform: rotateZ(45deg);
+  width: 2%;
 }
 
 .seconds {
-  width: 1%;
-  height: 48%;
   background-color: black;
+  height: 48%;
+  left: 49.5%;
   position: absolute;
   top: 13.5%;
-  left: 49.5%;
   transform-origin: 50% 76.5%;
   transform: rotateZ(90deg);
+  width: 1%;
 }
 
 /* Animation */
