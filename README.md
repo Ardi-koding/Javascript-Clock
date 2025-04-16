@@ -23,4 +23,5 @@ Check out the live demo of the project:
 ## Project Structure
 
 index.html contains the analog structure
+and
 digital.html contains the digital clock
